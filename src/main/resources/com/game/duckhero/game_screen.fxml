@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gameContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#mouseClickStickGrow" onMouseReleased="#mouseReleaseStickFall" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.game.duckhero.GameScreenController">
+   <children>
+      <ImageView fx:id="buttonPause" fitHeight="631.0" fitWidth="1261.0" layoutY="-15.0" mouseTransparent="true" onMouseClicked="#togglePauseButton" onMouseEntered="#pauseHover" onMouseExited="#pauseHoverOff" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0">
+         <image>
+            <Image url="@resources/sky_night.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ducky" fitHeight="220.0" fitWidth="220.0" layoutX="63.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/ducky_idle.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonPause" fitHeight="79.0" fitWidth="79.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#togglePauseButton" onMouseEntered="#pauseHover" onMouseExited="#pauseHoverOff" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/Button_Pause_Normal.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" layoutX="345.0" layoutY="35.0" prefHeight="19.0" prefWidth="110.0" text="scores" textFill="WHITE">
+         <font>
+            <Font name="Upheaval TT -BRK-" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" alignment="BOTTOM_CENTER" layoutX="319.0" layoutY="54.0" prefHeight="60.0" prefWidth="161.0" text="0" textFill="WHITE">
+         <font>
+            <Font name="Upheaval TT -BRK-" size="60.0" />
+         </font>
+      </Label>
+      <Label fx:id="collectibleCount" layoutX="680.0" layoutY="15.0" prefHeight="60.0" prefWidth="26.0" text="0" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Upheaval TT -BRK-" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="68.0" layoutX="718.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/Collectible_bread.png" />
+         </image>
+      </ImageView>
+      <Line fx:id="stickline" endX="15.800018310546875" endY="51.899993896484375" layoutX="216.0" layoutY="327.0" startX="15.800018310546875" startY="51.899993896484375" strokeWidth="10.0" />
+   </children>
+</AnchorPane>

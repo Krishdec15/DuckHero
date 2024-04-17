@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="settingsContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.game.duckhero.SettingsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="631.0" layoutX="-17.0" layoutY="-16.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="842.0" />
+      <ImageView fx:id="buttonRestart" fitHeight="120.0" fitWidth="150.0" layoutX="430.0" layoutY="191.0" onMouseClicked="#toggleRestart" onMouseEntered="#restartHover" onMouseExited="#restartHoverOff" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/Button_Replay_Normal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonResume" fitHeight="120.0" fitWidth="500.0" layoutX="251.0" layoutY="191.0" onMouseClicked="#toggleResumeButton" onMouseEntered="#resumeHover" onMouseExited="#resumeHoverOff" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/Button_Play_Normal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonHome" fitHeight="120.0" fitWidth="150.0" layoutX="430.0" layoutY="364.0" onMouseClicked="#toggleHome" onMouseEntered="#homeHover" onMouseExited="#homeHoverOff" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/Button_home_normal.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonSave" fitHeight="120.0" fitWidth="500.0" layoutX="251.0" layoutY="364.0" onMouseClicked="#toggleSave" onMouseEntered="#saveHover" onMouseExited="#saveHoverOff" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/Button_Save_game.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="14.0" layoutY="507.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/Button_Music_off.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonAudio" fitHeight="79.0" fitWidth="79.0" layoutX="707.0" layoutY="507.0" onMouseClicked="#toggleAudio" onMouseEntered="#audioHover" onMouseExited="#audioHoverOff" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/Button_Sound_off.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonMusic" fitHeight="79.0" fitWidth="79.0" layoutX="14.0" layoutY="507.0" onMouseClicked="#toggleMusic" onMouseEntered="#musicHover" onMouseExited="#musicHoverOff" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/Button_Music_Normal.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
