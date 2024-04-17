@@ -1,3 +1,5 @@
+CREDITS: KRISHNENDU & DAKSH
+
 NOTE:In the initial design of the project, the UML was crafted without prior knowledge of JavaFX.
 However, as the project unfolded, JavaFX was introduced without compromising the core concept.
 While incorporating structural changes throughout the development process, the fundamental idea of the project persisted unchanged.
